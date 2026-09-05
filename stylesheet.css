@@ -2,20 +2,41 @@ body {
     background-color: black;
     color: seashell;
     font-family: Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding: 10px;
+    border-bottom: solid 1px seashell;
+}
+
+.navbar img {
+    height: 50px;
+    width: auto;
 }
 
 .navbar ul {
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
+    list-style: none;
 }
 
 .navbar a {
     display: block;
-    text-decoration: none;
+    color: seashell;
+    text-decoration: underline;
     padding: 14px 20px;
 }
 
 .navbar a:hover {
     background-color: #2b2b2b;
 }
+
