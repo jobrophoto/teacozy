@@ -46,7 +46,8 @@ body {
 
 .mission-section img {
     display: block;
-    width: 100%;
+    margin: 0 auto;
+    width: 1200px;
     height: 700px;
     object-fit: cover;
 }
@@ -98,3 +99,46 @@ body {
     font-weight: bold;
     font-size: 22px;
 }
+
+.location-section {
+    position: relative;
+}
+
+.location-section img {
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.location-section h2 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    margin: 0 0 15px;
+    text-align: center;
+}
+
+.location-card-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.location-card {
+    width: 300px;
+    background-color: rgba(0, 0, 0, .75);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.location-name {
+    margin: 0 0 10px;
+}
+
