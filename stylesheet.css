@@ -2,11 +2,11 @@
     --color-bg: #17140f;
     --color-bg-elevated: #0d0b09;
     --color-text: #f4ecdf;
-    --text-text-muted: #cfc3ae;
-    --color-accent: #c98463;
+    --color-text-muted: #cfc3ae;
+    --color-accent: #c9a463;
     --color-border: rgba(244, 236, 223, 0.15);
-    --font-heading: "Fraunce", Georgia, serif;
-    --font-body: "Work Sans", Helvetica, san-serif;
+    --font-heading: "Fraunces", Georgia, serif;
+    --font-body: "Work Sans", san-serif;
     --radius: 6px;
 }
 
@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5 {
 /* NAVBAR */
 
 .navbar {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,6 +59,48 @@ h1, h2, h3, h4, h5 {
 
 .navbar a:hover {
     background-color: var(--color-border);
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-text);
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        background-color: var(--color-bg);
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .navbar ul.is-open {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
 }
 
 .mission-section {
