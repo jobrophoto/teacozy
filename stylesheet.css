@@ -4,7 +4,7 @@
     --color-text: #f4ecdf;
     --text-text-muted: #cfc3ae;
     --color-accent: #c98463;
-    --color-border: rgba(244, 236, 223. 0.15);
+    --color-border: rgba(244, 236, 223, 0.15);
     --font-heading: "Fraunce", Georgia, serif;
     --font-body: "Work Sans", Helvetica, san-serif;
     --radius: 6px;
@@ -15,10 +15,14 @@
 }
 
 body {
-    background-color: black;
-    color: seashell;
-    font-family: Helvetica, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
     font-size: 22px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-heading);
 }
 
 /* NAVBAR */
@@ -27,9 +31,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    padding: 10px;
-    border-bottom: solid 1px seashell;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .navbar img {
@@ -47,13 +50,14 @@ body {
 
 .navbar a {
     display: block;
-    color: seashell;
-    text-decoration: underline;
+    color: var(--color-text);
+    text-decoration: none;
     padding: 14px 20px;
+    transition: background-color 0.2s ease;
 }
 
 .navbar a:hover {
-    background-color: #2b2b2b;
+    background-color: var(--color-border);
 }
 
 .mission-section {
