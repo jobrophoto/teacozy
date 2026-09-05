@@ -142,3 +142,17 @@ body {
     margin: 0 0 10px;
 }
 
+footer {
+    margin: 0 auto;
+}
+
+.footer-section {
+    height: 200px;
+    text-align: center;
+}
+
+footer p {
+    text-align: start;
+    margin: 20px;
+    font-weight: bold;
+}
