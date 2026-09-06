@@ -2,6 +2,8 @@
 
 A responsive marketing site for a fictional boutique tea shop, built as a front-end/web design portfolio project.
 
+**Live demo:** [jobrophoto.github.io/teacozy](https://jobrophoto.github.io/teacozy/)
+
 ## Overview
 
 The Tea Cozy is a single-page site covering a shop's mission, featured teas, and store locations. It started as a static desktop-only layout and was rebuilt into a fully responsive, token-based design system — including a custom color palette, a serif/sans font pairing, and a hand-built hamburger navigation menu (no frameworks or libraries).
