@@ -210,6 +210,13 @@ h1, h2, h3, h4, h5 {
     background-color: rgba(0, 0, 0, .75);
     padding: 40px 20px;
     text-align: center;
+    border-radius: var(--radius);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
 .location-name {
