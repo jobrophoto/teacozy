@@ -18,3 +18,12 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.15});
 
 revealEls.forEach((el) => revealObserver.observe(el));
+
+const navLinks = document.querySelectorAll('.navbar a');
+
+navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+    });
+});
