@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
@@ -98,12 +102,20 @@ h1, h2, h3, h4, h5 {
     background-color: var(--color-text);
     border-radius: 2px;
 }
-
+.mission-section::before,
+.location-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0) 60%);
+    pointer-events: none;
+}
 
 /* Mission Section */
 
 .mission-section {
     position: relative;
+    scroll-margin-top: 90px;
 }
 
 .mission-section img {
@@ -124,6 +136,7 @@ h1, h2, h3, h4, h5 {
     text-align: center;
     padding: 20px;
     background-color: var(--color-bg-elevated);
+    z-index: 1;
 }
 
 .mission-text h2 {
@@ -144,6 +157,7 @@ h1, h2, h3, h4, h5 {
     margin: 100px auto;
     padding: 0 20px;
     text-align: center;
+    scroll-margin-top: 90px;
 }
 
 .tom-tea {
@@ -188,6 +202,7 @@ h1, h2, h3, h4, h5 {
 
 .location-section {
     position: relative;
+    scroll-margin-top: 90px;
 }
 
 .location-section img {
@@ -206,6 +221,7 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     margin: 0 0 15px;
     text-align: center;
+    z-index: 1;
 }
 
 .location-card-container {
