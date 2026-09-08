@@ -2,7 +2,7 @@
 
 A responsive marketing site for a fictional boutique tea shop, built as a front-end/web design portfolio project.
 
-**Live demo:** [jobrophoto.github.io/teacozy](https://jobrophoto.github.io/teacozy/)
+**Live demo:** [jobrophoto.github.io/teacozy](https://jobrophoto.github.io/teacozy/){:target="_blank"}
 
 ## Overview
 
